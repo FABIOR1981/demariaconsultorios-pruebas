@@ -1,0 +1,73 @@
+/* VERSIÓN 7 · Pastel amable: lavanda, menta y rosa en bloques redondeados */
+:root { --fondo: #f3efff; --tinta: #2d2a4a; --acento: #7c5cf5; --menta: #d4f4e6; --rosa: #ffd9e6; --amarillo: #fff0b3; --lila: #dcd3ff; --titulo: "Trebuchet MS", Verdana, sans-serif; --sans: "Trebuchet MS", Verdana, system-ui, sans-serif; }
+h1, h2, h3 { font-family: var(--titulo); font-weight: 800; color: var(--tinta); letter-spacing: -.02em; }
+h1 { font-size: clamp(2.3rem, 5.4vw, 4.3rem); line-height: 1.05; }
+h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); }
+h3 { font-size: 1.2rem; }
+p { color: #55527a; }
+.encabezado { background: transparent; }
+.encabezado__interior { background: #fff; border-radius: 999px; padding: .6rem 1.1rem; box-shadow: 0 8px 24px rgba(45, 42, 74, .08); margin-top: .6rem; }
+.marca { font-family: var(--titulo); font-weight: 800; color: var(--tinta); text-decoration: none; }
+.marca span { color: var(--acento); }
+.menu a { font-weight: 700; color: var(--tinta); font-size: .9rem; }
+.menu a:hover { color: var(--acento); }
+.boton { border-radius: 999px; padding: .9rem 1.6rem; font-weight: 700; border: 0; box-shadow: 0 6px 16px rgba(124, 92, 245, .2); }
+.boton--primario { background: var(--acento); color: #fff; }
+.boton--primario:hover { background: #6546e0; }
+.boton--secundario { background: #fff; color: var(--tinta); }
+.boton--secundario:hover { background: var(--amarillo); }
+.boton--compacto { padding: .55rem 1rem; font-size: .85rem; }
+.boton--grande { padding: 1.1rem 2.1rem; }
+.menu a.boton--primario, .menu a.boton--primario:hover { color: #fff; }
+.etiqueta { background: var(--lila); color: var(--tinta); padding: .3rem .8rem; border-radius: 999px; font-weight: 700; font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; }
+.etiqueta--clara { background: #fff; color: var(--acento); }
+.inicio__visual img { border-radius: 36px; height: 480px; }
+.chip-flotante { background: var(--amarillo); border-radius: 24px; padding: 1rem 1.4rem; box-shadow: 0 10px 26px rgba(45, 42, 74, .12); }
+.chip-flotante__monto { font-family: var(--titulo); font-weight: 800; font-size: 1.9rem; color: var(--tinta); }
+.datos { padding: 0 0 1rem; }
+.datos .dato { border-radius: 28px; padding: 1.3rem; background: var(--menta); }
+.datos .dato:nth-child(2) { background: var(--rosa); }
+.datos .dato:nth-child(3) { background: var(--amarillo); }
+.datos .dato:nth-child(4) { background: var(--lila); }
+.dato strong { font-family: var(--titulo); font-weight: 800; font-size: 1.7rem; color: var(--tinta); }
+.dato span { color: var(--tinta); font-weight: 600; }
+.seccion--suave { background: transparent; }
+.bento { gap: 1.1rem; }
+.bento__tile { background: #fff; border-radius: 30px; box-shadow: 0 10px 30px rgba(45, 42, 74, .07); }
+.bento__tile:nth-child(2) { background: var(--menta); }
+.bento__tile:nth-child(3) { background: var(--rosa); }
+.bento__tile:nth-child(5) { background: var(--amarillo); }
+.bento__tile--grande { border-radius: 30px; }
+.bento__texto { background: #fff; left: 1rem; right: 1rem; bottom: 1rem; border-radius: 22px; padding: 1.2rem 1.4rem; }
+.bento__monto { font-family: var(--titulo); font-weight: 800; font-size: 2.8rem; color: var(--acento); }
+.tarjeta { background: #fff; border-radius: 30px; box-shadow: 0 10px 30px rgba(45, 42, 74, .08); }
+.tarjeta img { height: 220px; }
+.tarjeta:nth-child(2) { background: var(--menta); }
+.tarjeta:nth-child(4) { background: var(--amarillo); }
+.etiquetas li { background: #fff; border-radius: 999px; color: var(--tinta); font-weight: 700; padding: .4rem .9rem; font-size: .75rem; }
+.galeria img { border-radius: 26px; }
+.nota-destacada { background: var(--lila); border-radius: 32px; padding: 2.4rem; }
+.vidrio { background: #fff; border-radius: 30px; box-shadow: 0 10px 30px rgba(45, 42, 74, .07); border: 0; }
+.espera__grilla { background: var(--rosa); border-radius: 36px; padding: 1.8rem; }
+.espera__grilla img { border-radius: 24px; }
+.precio { background: #fff; border-radius: 30px; box-shadow: 0 10px 30px rgba(45, 42, 74, .07); }
+.precio--destacado { background: var(--acento); }
+.precio--destacado * { color: #fff; }
+.precio__monto { font-family: var(--titulo); font-weight: 800; color: var(--acento); }
+.politicas { background: var(--menta); border-radius: 30px; padding: 2rem; }
+.politicas, .politicas * { color: var(--tinta); }
+.bloque { background: #fff; border-radius: 30px; }
+.horarios th, .horarios td { border-bottom: 1px dashed #c9bfef; color: var(--tinta); }
+.mapa { background: var(--menta); border-radius: 30px; }
+.completar { background: var(--amarillo); border-radius: 999px; color: var(--tinta); border: 0; }
+.faq__item { background: #fff; border-radius: 24px; }
+.faq__item:nth-child(even) { background: var(--menta); }
+.faq__item summary { font-family: var(--titulo); font-weight: 700; padding: 1.2rem 1.5rem; color: var(--tinta); }
+.faq__icono::before, .faq__icono::after { background: var(--acento); }
+.contacto { background: transparent; padding: 3rem 0 4rem; }
+.contacto__grilla { background: var(--acento); border-radius: 40px; padding: 2.8rem; box-shadow: none; }
+.contacto h2, .contacto p { color: #fff; }
+.contacto .etiqueta { background: #fff; }
+.contacto .boton--primario { background: #fff; color: var(--acento); }
+.contacto .completar { color: var(--tinta); }
+.pie p { color: var(--tinta); }

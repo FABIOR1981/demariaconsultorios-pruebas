@@ -1,0 +1,73 @@
+/* Galería de versiones: miniaturas en vivo de cada diseño */
+:root {
+  --tinta: #13292d;
+  --suave: #4a6065;
+  --petroleo: #0f3d46;
+  --aqua: #5cc6c0;
+  --linea: #d6e2e3;
+  --fondo: #f3f7f7;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif; background: var(--fondo); color: var(--tinta); line-height: 1.6; }
+.contenedor { width: min(1180px, 92%); margin: 0 auto; }
+
+.cabecera { padding: 4rem 0 2.5rem; }
+.etiqueta { font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; color: var(--petroleo); font-weight: 600; margin: 0 0 .6rem; }
+.cabecera h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 600; margin: 0 0 .6rem; color: var(--petroleo); }
+.cabecera__texto { margin: 0; color: var(--suave); max-width: 560px; }
+
+.galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding-bottom: 3rem; }
+
+.version {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--linea);
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 6px 20px rgba(15, 61, 70, .08);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.version:hover, .version:focus-visible {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 46px rgba(15, 61, 70, .2);
+  border-color: var(--aqua);
+  outline: none;
+}
+
+/* Marco de la miniatura: relación 16:10, la vista real se escala dentro */
+.version__vista {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #e6eeee;
+  border-bottom: 1px solid var(--linea);
+}
+.version__vista iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 800px;
+  border: 0;
+  transform-origin: top left;
+  pointer-events: none;
+}
+
+.version__info { padding: 1.4rem 1.5rem 1.6rem; display: flex; flex-direction: column; flex: 1; }
+.version__numero { font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; color: var(--petroleo); font-weight: 600; }
+.version__info h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; font-weight: 600; margin: .4rem 0 .5rem; color: var(--tinta); }
+.version__info p { margin: 0 0 1.2rem; color: var(--suave); font-size: .95rem; }
+.version__ver { margin-top: auto; color: var(--petroleo); font-weight: 600; font-size: .95rem; transition: color .25s; }
+.version:hover .version__ver { color: #17525d; text-decoration: underline; }
+
+.pie { padding: 2rem 0 3rem; font-size: .9rem; color: var(--suave); border-top: 1px solid var(--linea); }
+.pie code { background: #e6eeee; padding: .1rem .4rem; border-radius: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .version { transition: none; }
+  .version:hover { transform: none; }
+}

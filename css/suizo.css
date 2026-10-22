@@ -1,0 +1,73 @@
+/* VERSIÓN 6 · Suizo: blanco, azul cobalto, líneas finas y secciones numeradas */
+:root { --fondo: #ffffff; --tinta: #101010; --acento: #1d4ed8; --linea: #101010; --titulo: "Helvetica Neue", Helvetica, Arial, sans-serif; --sans: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+h1, h2, h3 { font-family: var(--titulo); font-weight: 700; letter-spacing: -.03em; color: var(--tinta); }
+h1 { font-size: clamp(2.6rem, 6.4vw, 5.2rem); line-height: .98; letter-spacing: -.045em; }
+h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); }
+h3 { font-size: 1.1rem; }
+p { color: #333; }
+.encabezado { background: #fff; border-bottom: 1px solid var(--linea); }
+.encabezado__interior { padding: 1rem 0; }
+.marca { font-weight: 800; letter-spacing: -.02em; color: var(--tinta); text-decoration: none; font-size: 1.1rem; }
+.marca span { color: var(--acento); }
+.menu a { font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 600; color: var(--tinta); }
+.menu a:hover { color: var(--acento); }
+.boton { border: 1px solid var(--tinta); border-radius: 0; padding: .9rem 1.5rem; font-weight: 700; font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--tinta); background: #fff; }
+.boton--primario { background: var(--acento); border-color: var(--acento); color: #fff; }
+.boton--primario:hover { background: #1640b0; border-color: #1640b0; }
+.boton--secundario:hover { background: var(--tinta); color: #fff; }
+.boton--compacto { padding: .55rem .9rem; font-size: .7rem; }
+.boton--grande { padding: 1.1rem 2rem; }
+.menu a.boton--primario, .menu a.boton--primario:hover { color: #fff; }
+.etiqueta { color: var(--acento); font-weight: 700; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; }
+.inicio { padding: 5rem 0 3rem; border-bottom: 1px solid var(--linea); }
+.inicio__visual img { height: 520px; }
+.chip-flotante { background: var(--acento); color: #fff; border-radius: 0; left: -1rem; bottom: -1rem; padding: 1rem 1.4rem; }
+.chip-flotante__monto { font-weight: 800; font-size: 2rem; color: #fff; }
+.chip-flotante__texto { color: #dbe6ff; text-transform: uppercase; font-size: .7rem; letter-spacing: .08em; }
+.datos { border-bottom: 1px solid var(--linea); padding: 0; }
+.datos__grilla { gap: 0; }
+.dato { border-left: 1px solid var(--linea); padding: 1.6rem 1rem; text-align: left; }
+.dato:first-child { border-left: 0; }
+.dato strong { font-size: 2.2rem; font-weight: 800; letter-spacing: -.03em; color: var(--tinta); }
+.dato span { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: #333; }
+.seccion { position: relative; }
+.seccion__encabezado { max-width: none; text-align: left; margin: 0 0 2.5rem; }
+.seccion__encabezado::before { content: "0" counter(sec); display: block; font-size: .8rem; font-weight: 700; color: var(--acento); border-top: 1px solid var(--tinta); padding-top: .6rem; margin-bottom: 1rem; }
+.bento { gap: 0; border-top: 1px solid var(--tinta); border-left: 1px solid var(--tinta); }
+.bento__tile { background: #fff; border-right: 1px solid var(--tinta); border-bottom: 1px solid var(--tinta); padding: 1.8rem; }
+.bento__tile--grande { padding: 0; }
+.bento__texto { background: #fff; color: var(--tinta); border-top: 1px solid var(--tinta); }
+.bento__texto p { color: #333; }
+.bento__monto { font-size: 3rem; font-weight: 800; letter-spacing: -.04em; color: var(--acento); }
+.tarjeta { border: 1px solid var(--tinta); }
+.tarjeta img { height: 230px; border-bottom: 1px solid var(--tinta); }
+.tarjeta:hover { box-shadow: 6px 6px 0 var(--acento); }
+.etiquetas li { border: 1px solid var(--tinta); font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; padding: .3rem .6rem; background: #fff; color: var(--tinta); }
+.galeria img { border: 1px solid var(--tinta); height: 200px; }
+.nota-destacada { border: 1px solid var(--acento); background: #fff; }
+.vidrio { background: #fff; border: 1px solid var(--tinta); box-shadow: none; padding: 2rem; }
+.espera__grilla { background: none; border: 0; padding: 0; }
+.espera__grilla img { border: 1px solid var(--tinta); }
+.precios__grilla { gap: 0; border: 1px solid var(--tinta); }
+.precio { background: #fff; border-right: 1px solid var(--tinta); padding: 2rem; }
+.precio:last-child { border-right: 0; }
+.precio--destacado { background: var(--acento); }
+.precio--destacado * { color: #fff; }
+.precio__monto { font-size: 2.8rem; font-weight: 800; letter-spacing: -.04em; color: var(--tinta); }
+.politicas { background: none; border: 0; padding: 0; max-width: none; }
+.bloque { border: 1px solid var(--tinta); background: #fff; }
+.horarios th, .horarios td { border-bottom: 1px solid var(--tinta); }
+.horarios th, .horarios td { color: var(--tinta); }
+.mapa { border: 1px solid var(--tinta); background: #f3f4f6; }
+.completar { background: #fff7cc; border: 1px dashed var(--tinta); color: var(--tinta); }
+.faq__item { border-bottom: 1px solid var(--tinta); background: none; }
+.faq__item summary { font-weight: 700; padding: 1.2rem 0; font-size: 1.05rem; color: var(--tinta); }
+.faq__item p { padding: 0 0 1.3rem; color: #333; }
+.faq__icono::before, .faq__icono::after { background: var(--tinta); height: 2px; }
+.contacto { background: var(--acento); padding: 5rem 0; }
+.contacto__grilla { background: transparent; border: 0; padding: 0; box-shadow: none; }
+.contacto h2, .contacto p, .contacto .etiqueta { color: #fff; }
+.contacto .etiqueta { opacity: .85; }
+.contacto .boton--primario { background: #fff; color: var(--acento); border-color: #fff; }
+.pie { border-top: 1px solid var(--tinta); }
+.pie p { color: #333; }
