@@ -112,9 +112,9 @@ h1, h2, h3 { margin: 0 0 .5em; line-height: 1.15; }
 }
 @media (max-width: 720px) {
   .menu-toggle { display: block; }
-  .menu { position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; display: none; }
+  .menu { position: absolute; top: calc(100% + 6px); left: 4%; right: 4%; flex-direction: column; align-items: stretch; gap: 0; display: none; z-index: 60; background: var(--menu-fondo, var(--fondo)); border-radius: 16px; box-shadow: 0 18px 40px rgba(0, 0, 0, .22); padding: .4rem 0; }
   .menu.abierto { display: flex; }
-  .menu a { padding: .9rem 4%; }
+  .menu a { padding: .9rem 1.2rem; }
   .menu .boton { margin: .6rem 4%; justify-content: center; }
   .seccion { padding: 3.4rem 0; }
   .bento { grid-template-columns: 1fr; }

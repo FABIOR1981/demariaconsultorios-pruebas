@@ -1,5 +1,5 @@
 /* VERSIÓN 10 · Institucional clásico: marino y dorado, serif, líneas finas y sin esquinas redondeadas */
-:root { --fondo: #ffffff; --tinta: #14213d; --marino: #14213d; --oro: #a8844a; --oro-claro: #e2c992; --suave: #4a5568; --linea: #d8cfbd; --titulo: Georgia, "Times New Roman", serif; --sans: "Segoe UI", system-ui, -apple-system, Arial, sans-serif; }
+:root { --menu-fondo: var(--marino); --fondo: #ffffff; --tinta: #14213d; --marino: #14213d; --oro: #a8844a; --oro-claro: #e2c992; --suave: #4a5568; --linea: #d8cfbd; --titulo: Georgia, "Times New Roman", serif; --sans: "Segoe UI", system-ui, -apple-system, Arial, sans-serif; }
 h1, h2, h3 { font-family: var(--titulo); font-weight: 400; color: var(--marino); }
 h1 { font-size: clamp(2.3rem, 5vw, 3.8rem); line-height: 1.1; }
 h2 { font-size: clamp(1.8rem, 3.4vw, 2.5rem); }
