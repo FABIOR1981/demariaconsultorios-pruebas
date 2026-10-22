@@ -7,7 +7,7 @@
 const CONFIG = {
 
   // ----- Datos generales -----
-  nombre: "Demaria Consultorios",
+  nombre: "DeMaria Consultorios",
   ciudad: "Cordón, Montevideo",
 
   // ----- Contacto -----
@@ -15,7 +15,7 @@ const CONFIG = {
   // Ejemplo: "59899123456"
   whatsapp: "59891001334",
   // Mensaje que se precarga cuando alguien toca un botón de reserva.
-  mensajeWhatsapp: "Hola, quisiera consultar disponibilidad para reservar un consultorio en Demaria Consultorios.",
+  mensajeWhatsapp: "Hola, quisiera consultar disponibilidad para reservar un consultorio en DeMaria Consultorios.",
 
   // ----- Ubicación -----
   direccion: "Dr. Pablo de María 1334, Cordón, Montevideo",

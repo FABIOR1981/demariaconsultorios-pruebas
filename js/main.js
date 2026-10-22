@@ -1,4 +1,4 @@
-// Demaria Consultorios: comportamiento de la página.
+// DeMaria Consultorios: comportamiento de la página.
 // Los datos editables están en js/config.js (objeto CONFIG).
 
 document.addEventListener("DOMContentLoaded", () => {
