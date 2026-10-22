@@ -1,0 +1,72 @@
+/* VERSIÓN 10 · Institucional clásico: marino y dorado, serif, líneas finas y sin esquinas redondeadas */
+:root { --fondo: #ffffff; --tinta: #14213d; --marino: #14213d; --oro: #a8844a; --oro-claro: #e2c992; --suave: #4a5568; --linea: #d8cfbd; --titulo: Georgia, "Times New Roman", serif; --sans: "Segoe UI", system-ui, -apple-system, Arial, sans-serif; }
+h1, h2, h3 { font-family: var(--titulo); font-weight: 400; color: var(--marino); }
+h1 { font-size: clamp(2.3rem, 5vw, 3.8rem); line-height: 1.1; }
+h2 { font-size: clamp(1.8rem, 3.4vw, 2.5rem); }
+h3 { font-size: 1.25rem; }
+p { color: var(--suave); }
+.encabezado { background: var(--marino); }
+.marca { font-family: var(--titulo); font-size: 1.3rem; color: #fff; text-decoration: none; }
+.marca span { color: var(--oro-claro); }
+.menu a { color: #fff; font-size: .9rem; letter-spacing: .02em; }
+.menu a:hover { color: var(--oro-claro); }
+.menu-toggle span { background: #fff; }
+.boton { border-radius: 2px; padding: .85rem 1.6rem; font-size: .9rem; letter-spacing: .05em; border: 1px solid var(--oro); color: var(--marino); background: transparent; }
+.boton--primario { background: var(--oro); border-color: var(--oro); color: #fff; }
+.boton--primario:hover { background: #8e6d3a; border-color: #8e6d3a; }
+.boton--secundario:hover { background: var(--marino); color: #fff; border-color: var(--marino); }
+.boton--compacto { padding: .55rem 1rem; font-size: .8rem; }
+.boton--grande { padding: 1.05rem 2rem; }
+.menu a.boton--primario, .menu a.boton--primario:hover { color: #fff; }
+.menu a.boton--primario { border-color: var(--oro); }
+.etiqueta { color: var(--oro); font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; font-weight: 700; }
+.etiqueta--clara { color: var(--oro-claro); }
+.inicio__visual img { border-radius: 0; height: 470px; border: 8px solid #fff; outline: 1px solid var(--linea); }
+.chip-flotante { background: #fff; border-radius: 0; border: 1px solid var(--oro); padding: 1rem 1.3rem; }
+.chip-flotante__monto { font-family: var(--titulo); font-size: 1.8rem; color: var(--marino); }
+.chip-flotante__texto { color: var(--suave); font-size: .8rem; }
+.datos { background: var(--marino); padding: 2.2rem 0; }
+.datos .dato { color: #fff; background: transparent; border: 0; box-shadow: none; }
+.dato strong { font-family: var(--titulo); font-size: 1.9rem; color: var(--oro-claro); font-weight: 400; }
+.dato span { color: #d7dce6; font-size: .85rem; }
+.seccion--suave { background: #f6f3ec; }
+.seccion__encabezado { border-bottom: 1px solid var(--linea); padding-bottom: 1.4rem; }
+.bento { gap: 0; border: 1px solid var(--linea); }
+.bento__tile { background: #fff; border: 1px solid var(--linea); padding: 2rem; border-radius: 0; }
+.bento__tile--grande { border: 0; }
+.bento__texto { background: var(--marino); border-radius: 0; }
+.bento__texto h3, .bento__texto p { color: #fff; }
+.bento__monto { font-family: var(--titulo); font-size: 2.6rem; color: var(--oro); }
+.tarjeta { background: #fff; border: 1px solid var(--linea); border-radius: 0; box-shadow: none; }
+.tarjeta img { height: 220px; }
+.tarjeta:hover { box-shadow: 0 14px 30px rgba(20, 33, 61, .12); transform: none; }
+.etiquetas li { border: 1px solid var(--oro); border-radius: 0; color: var(--marino); background: #fff; font-size: .72rem; letter-spacing: .05em; padding: .35rem .7rem; }
+.galeria img { border-radius: 0; height: 200px; }
+.nota-destacada { background: #fff; border: 1px solid var(--oro); border-radius: 0; }
+.vidrio { background: #fff; border: 1px solid var(--linea); border-radius: 0; box-shadow: none; }
+.espera__grilla { padding: 2rem; background: #f6f3ec; border: 1px solid var(--linea); }
+.espera__grilla img { border-radius: 0; }
+.precio { background: #fff; border: 1px solid var(--linea); border-radius: 0; box-shadow: none; }
+.precio--destacado { background: var(--marino); border-color: var(--marino); }
+.precio--destacado * { color: #fff; }
+.precio--destacado .precio__monto { color: var(--oro-claro); }
+.precio__monto { font-family: var(--titulo); color: var(--marino); }
+.precio__monto--consultar { color: var(--oro); }
+.politicas { background: #fff; border: 1px solid var(--oro); border-radius: 0; }
+.bloque { background: #fff; border: 1px solid var(--linea); border-radius: 0; }
+.horarios th, .horarios td { border-bottom: 1px solid var(--linea); }
+.horarios th { color: var(--marino); }
+.mapa { background: #f6f3ec; border: 1px solid var(--linea); border-radius: 0; }
+.completar { background: #fff8e6; border: 1px dashed var(--oro); color: #7a5b1f; border-radius: 0; }
+.faq__item { background: #fff; border: 0; border-bottom: 1px solid var(--linea); border-radius: 0; }
+.faq__item summary { font-family: var(--titulo); font-size: 1.15rem; color: var(--marino); padding: 1.2rem 0; }
+.faq__item p { padding: 0 0 1.3rem; }
+.faq__icono::before, .faq__icono::after { background: var(--oro); height: 1.5px; }
+.contacto { background: var(--marino); padding: 4.5rem 0; }
+.contacto__grilla { background: transparent; border: 1px solid var(--oro); padding: 2.6rem; box-shadow: none; border-radius: 0; }
+.contacto h2 { color: #fff; }
+.contacto p { color: #d7dce6; }
+.contacto__linea { color: #fff !important; }
+.contacto .boton--primario { background: var(--oro); color: #fff; }
+.pie { border-top: 1px solid var(--linea); }
+.pie p { color: var(--suave); }
