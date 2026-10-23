@@ -3,146 +3,336 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DeMaria Consultorios · Versiones del diseño</title>
-  <meta name="description" content="Elegí el diseño de la página de DeMaria Consultorios.">
-  <link rel="stylesheet" href="css/galeria.css">
+  <title>DeMaria Consultorios | Alquiler de consultorios en Cordón</title>
+  <meta name="description" content="Alquiler de consultorios en Cordón Sur, Montevideo. 4 consultorios equipados con aire acondicionado y WiFi. $280 por hora. Reservas por WhatsApp.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="cabecera">
-    <div class="contenedor">
-      <h1>DeMaria Consultorios: versiones del diseño</h1>
-      <p class="cabecera__texto">Doce propuestas con el mismo contenido. Tocá una miniatura para verla completa.</p>
+  <div class="fondo" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior vidrio">
+      <a href="#inicio" class="marca">DeMaria <span>Consultorios</span></a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" class="menu">
+        <a href="#espacios">Espacios</a>
+        <a href="#precios">Precios</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#faq">Preguntas</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto" class="boton boton--primario boton--compacto js-whatsapp">Reservar</a>
+        <a href="galeria.html" class="volver-galeria">Versiones</a>
+      </nav>
     </div>
   </header>
 
-  <main class="contenedor galeria">
-    <a class="version" href="versiones/v1-glass.html">
-      <div class="version__vista"><iframe src="versiones/v1-glass.html" title="Vista previa versión 1" tabindex="-1" aria-hidden="true"></iframe></div>
-      <div class="version__info">
-        <span class="version__numero">Versión 1</span>
-        <h2>Glassmorphism y bento</h2>
-        <p>Paneles de vidrio sobre fondo de color, cuadrícula bento y microinteracciones.</p>
-        <span class="version__ver">Ver versión completa →</span>
-      </div>
-    </a>
+  <main>
 
-    <a class="version" href="versiones/v2-minimal.html">
-      <div class="version__vista"><iframe src="versiones/v2-minimal.html" title="Vista previa versión 2" tabindex="-1" aria-hidden="true"></iframe></div>
-      <div class="version__info">
-        <span class="version__numero">Versión 2</span>
-        <h2>Editorial minimalista</h2>
-        <p>Blanco, tipografía serif grande y líneas finas. Sin sombras ni tarjetas.</p>
-        <span class="version__ver">Ver versión completa →</span>
-      </div>
-    </a>
+    <!-- INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenedor inicio__grilla">
+        <div class="inicio__texto-bloque">
+          <h1>Consultorios equipados para tu profesión</h1>
+          <p class="inicio__resumen">Cuatro consultorios en Cordón Sur, Montevideo, para abogados, escribanos, psicólogos, médicos, fisioterapeutas y terapias alternativas. Listos para atender desde el primer día.</p>
+          <div class="inicio__acciones">
+            <a href="#contacto" class="boton boton--primario js-whatsapp">
+              Reservar por WhatsApp <span class="flecha" aria-hidden="true">→</span>
+            </a>
+            <a href="#precios" class="boton boton--secundario">Ver precios</a>
+          </div>
+        </div>
 
-    <a class="version" href="versiones/v3-oscuro.html">
-      <div class="version__vista"><iframe src="versiones/v3-oscuro.html" title="Vista previa versión 3" tabindex="-1" aria-hidden="true"></iframe></div>
-      <div class="version__info">
-        <span class="version__numero">Versión 3</span>
-        <h2>Oscuro premium</h2>
-        <p>Fondo petróleo profundo con acentos dorados. Más sobrio y de lujo.</p>
-        <span class="version__ver">Ver versión completa →</span>
+        <div class="inicio__visual">
+          <img src="imagenes/consultorio-3.webp" alt="Consultorio 3 con sillones marrones y escritorio">
+          <div class="chip-flotante vidrio">
+            <span class="chip-flotante__monto" data-config="precioHora">$280</span>
+            <span class="chip-flotante__texto">por hora</span>
+          </div>
+        </div>
       </div>
-    </a>
-    <a class="version" href="versiones/v4-brutalista.html">
-      <div class="version__vista"><iframe src="versiones/v4-brutalista.html" title="Vista previa Versión 4" tabindex="-1" aria-hidden="true"></iframe></div>
-      <div class="version__info">
-        <span class="version__numero">Versión 4</span>
-        <h2>Brutalista llamativo</h2>
-        <p>Colores sólidos, bordes gruesos y sombras duras. Directo y con mucha personalidad.</p>
-        <span class="version__ver">Ver versión completa →</span>
-      </div>
-    </a>
+    </section>
 
-    <a class="version" href="versiones/v5-organico.html">
-      <div class="version__vista"><iframe src="versiones/v5-organico.html" title="Vista previa Versión 5" tabindex="-1" aria-hidden="true"></iframe></div>
-      <div class="version__info">
-        <span class="version__numero">Versión 5</span>
-        <h2>Orgánico y cálido</h2>
-        <p>Tonos salvia y terracota, formas redondeadas y foto en arco.</p>
-        <span class="version__ver">Ver versión completa →</span>
+    <!-- DATOS RÁPIDOS -->
+    <section class="datos">
+      <div class="contenedor datos__grilla">
+        <div class="dato vidrio">
+          <strong>4</strong>
+          <span>consultorios</span>
+        </div>
+        <div class="dato vidrio">
+          <strong data-config="precioHora">$280</strong>
+          <span>por hora</span>
+        </div>
+        <div class="dato vidrio">
+          <strong>AC + WiFi</strong>
+          <span>en todos los espacios</span>
+        </div>
+        <div class="dato vidrio">
+          <strong>SUAT</strong>
+          <span>cobertura disponible</span>
+        </div>
       </div>
-    </a>
+    </section>
 
-    <a class="version" href="versiones/v6-suizo.html">
-      <div class="version__vista"><iframe src="versiones/v6-suizo.html" title="Vista previa Versión 6" tabindex="-1" aria-hidden="true"></iframe></div>
-      <div class="version__info">
-        <span class="version__numero">Versión 6</span>
-        <h2>Suizo, de grilla</h2>
-        <p>Blanco y azul cobalto, líneas finas y secciones numeradas. Claro y técnico.</p>
-        <span class="version__ver">Ver versión completa →</span>
-      </div>
-    </a>
+    <!-- CARACTERÍSTICAS (BENTO) -->
+    <section id="servicios" class="seccion">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <h2>Todo lo que necesitás para atender</h2>
+          <p>Un espacio privado y completo, sin preocuparte por la logística.</p>
+        </header>
 
-    <a class="version" href="versiones/v7-pastel.html">
-      <div class="version__vista"><iframe src="versiones/v7-pastel.html" title="Vista previa Versión 7" tabindex="-1" aria-hidden="true"></iframe></div>
-      <div class="version__info">
-        <span class="version__numero">Versión 7</span>
-        <h2>Pastel amable</h2>
-        <p>Lavanda, menta y rosa en bloques redondeados. Cercano y pensado para terapias.</p>
-        <span class="version__ver">Ver versión completa →</span>
-      </div>
-    </a>
+        <div class="bento">
+          <article class="bento__tile bento__tile--grande vidrio">
+            <img src="imagenes/consultorio-4.webp" alt="Consultorio con sillones y ventanas de vidrio">
+            <div class="bento__texto">
+              <h3>Consultorios privados</h3>
+              <p>Cuatro espacios independientes, cada uno con aire acondicionado y WiFi.</p>
+            </div>
+          </article>
 
-    <a class="version" href="versiones/v8-fotografico.html">
-      <div class="version__vista"><iframe src="versiones/v8-fotografico.html" title="Vista previa Versión 8" tabindex="-1" aria-hidden="true"></iframe></div>
-      <div class="version__info">
-        <span class="version__numero">Versión 8</span>
-        <h2>Fotográfico nocturno</h2>
-        <p>Fondo carbón, foto a pantalla completa y consultorios en filas alternadas.</p>
-        <span class="version__ver">Ver versión completa →</span>
-      </div>
-    </a>
+          <article class="bento__tile vidrio">
+            <h3>Reserva por hora</h3>
+            <p class="bento__monto" data-config="precioHora">$280</p>
+            <p>Cuponeras y paquetes a consultar.</p>
+          </article>
 
-    <a class="version" href="versiones/v9-bloques.html">
-      <div class="version__vista"><iframe src="versiones/v9-bloques.html" title="Vista previa Versión 9" tabindex="-1" aria-hidden="true"></iframe></div>
-      <div class="version__info">
-        <span class="version__numero">Versión 9</span>
-        <h2>Bloques de color</h2>
-        <p>Cada sección en un color sólido: verde, coral y azul. Muy visual.</p>
-        <span class="version__ver">Ver versión completa →</span>
-      </div>
-    </a>
+          <article class="bento__tile vidrio">
+            <h3>Recepción y espera</h3>
+            <p>Sala de espera y recepción para tus pacientes o clientes.</p>
+            <p class="bento__extra">Podemos llevar tu agenda si lo necesitás.</p>
+          </article>
 
-    <a class="version" href="versiones/v10-institucional.html">
-      <div class="version__vista"><iframe src="versiones/v10-institucional.html" title="Vista previa Versión 10" tabindex="-1" aria-hidden="true"></iframe></div>
-      <div class="version__info">
-        <span class="version__numero">Versión 10</span>
-        <h2>Institucional clásico</h2>
-        <p>Marino y dorado, tipografía serif y líneas finas. Serio y formal, pensado para abogados y escribanos.</p>
-        <span class="version__ver">Ver versión completa →</span>
-      </div>
-    </a>
+          <article class="bento__tile bento__tile--ancha vidrio">
+            <h3>Cobertura SUAT</h3>
+            <p>Atendé a tus pacientes con la cobertura que ya utilizan.</p>
+          </article>
 
-    <a class="version" href="versiones/v11-clinico.html">
-      <div class="version__vista"><iframe src="versiones/v11-clinico.html" title="Vista previa Versión 11" tabindex="-1" aria-hidden="true"></iframe></div>
-      <div class="version__info">
-        <span class="version__numero">Versión 11</span>
-        <h2>Clínico calmo</h2>
-        <p>Blanco y verde azulado suave, tarjetas limpias. Transmite confianza para médicos y fisioterapeutas.</p>
-        <span class="version__ver">Ver versión completa →</span>
+          <article class="bento__tile vidrio">
+            <h3>Talleres y reuniones</h3>
+            <p>Uno de los consultorios para grupos de hasta <span data-config="tallerMaximo">10</span> personas.</p>
+          </article>
+        </div>
       </div>
-    </a>
+    </section>
 
-    <a class="version" href="versiones/v12-conversion.html">
-      <div class="version__vista"><iframe src="versiones/v12-conversion.html" title="Vista previa Versión 12" tabindex="-1" aria-hidden="true"></iframe></div>
-      <div class="version__info">
-        <span class="version__numero">Versión 12</span>
-        <h2>Conversión móvil</h2>
-        <p>Botón de WhatsApp fijo en el celular, pasos para reservar y menos texto por bloque.</p>
-        <span class="version__ver">Ver versión completa →</span>
+    <!-- CONSULTORIOS -->
+    <section id="espacios" class="seccion seccion--suave">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <h2>Nuestros consultorios</h2>
+          <p>Elegí el espacio que mejor se adapte a tu actividad.</p>
+        </header>
+
+        <div class="espacios__grilla">
+          <article class="tarjeta vidrio">
+            <img src="imagenes/consultorio-2-escritorio.webp" alt="Consultorio 2 con escritorio y camilla">
+            <div class="tarjeta__cuerpo">
+              <h3>Consultorio 2</h3>
+              <p>Ideal para atención médica, odontología, fisioterapia y consultas que requieran escritorio.</p>
+              <ul class="etiquetas">
+                <li>Escritorio</li>
+                <li>Camilla</li>
+                <li>AC</li>
+                <li>WiFi</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tarjeta vidrio">
+            <img src="imagenes/consultorio-3.webp" alt="Consultorio 3 con sillones marrones y escritorio">
+            <div class="tarjeta__cuerpo">
+              <h3>Consultorio 3</h3>
+              <p>Ideal para abogados, escribanos, psicólogos y consultas con escritorio.</p>
+              <ul class="etiquetas">
+                <li>Escritorio</li>
+                <li>Sillones</li>
+                <li>AC</li>
+                <li>WiFi</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tarjeta vidrio">
+            <img src="imagenes/consultorio-4.webp" alt="Consultorio 4 con sillones y ventanas de vidrio">
+            <div class="tarjeta__cuerpo">
+              <h3>Consultorio 4</h3>
+              <p>Ideal para psicología, coaching y sesiones individuales.</p>
+              <ul class="etiquetas">
+                <li>Sillones</li>
+                <li>AC</li>
+                <li>WiFi</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tarjeta vidrio">
+            <img src="imagenes/consultorio-5-camilla.webp" alt="Consultorio 5 con camilla y reloj">
+            <div class="tarjeta__cuerpo">
+              <h3>Consultorio 5</h3>
+              <p>Ideal para masajes, fisioterapia, reiki y terapias corporales.</p>
+              <ul class="etiquetas">
+                <li>Camilla</li>
+                <li>AC</li>
+                <li>WiFi</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="galeria" aria-label="Más fotos de los consultorios">
+          <img src="imagenes/consultorio-2-sillones.webp" alt="Consultorio 2 con sillones negros y televisor">
+          <img src="imagenes/consultorio-5-sillones.webp" alt="Consultorio 5 con sillones grises">
+          <img src="imagenes/consultorio-5-camilla-2.webp" alt="Consultorio 5 con camilla de masajes">
+        </div>
       </div>
-    </a>
+    </section>
+
+    <!-- SALA DE ESPERA -->
+    <section class="seccion">
+      <div class="contenedor espera__grilla vidrio">
+        <div class="espera__texto">
+          <h2>Sala de espera y recepción</h2>
+          <p>Tus pacientes o clientes tienen su propio lugar para esperar, con recepción para recibirlos.</p>
+          <p>También podemos llevar tu agenda si lo necesitás.</p>
+        </div>
+        <img src="imagenes/sala-espera.webp" alt="Sala de espera con sillas negras y cuadro de otoño">
+      </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section id="precios" class="seccion seccion--suave">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <h2>Tarifas y condiciones</h2>
+        </header>
+
+        <div class="precios__grilla">
+          <div class="precio vidrio precio--destacado">
+            <h3>Reserva por hora</h3>
+            <p class="precio__monto"><span data-config="precioHora">$280</span><span> / hora</span></p>
+            <ul>
+              <li>Consultorio equipado con AC y WiFi</li>
+              <li>Sala de espera y recepción</li>
+              <li>Cobertura SUAT</li>
+            </ul>
+            <a href="#contacto" class="boton boton--primario js-whatsapp">Reservar por WhatsApp</a>
+          </div>
+
+          <div class="precio vidrio">
+            <h3>Cuponeras</h3>
+            <p class="precio__monto precio__monto--consultar">Consultar</p>
+            <p>Descuentos por volumen de horas. Escribinos para armar un paquete a tu medida.</p>
+          </div>
+
+          <div class="precio vidrio">
+            <h3>Talleres y reuniones</h3>
+            <p class="precio__monto precio__monto--consultar">Consultar</p>
+            <p>Para grupos de hasta <span data-config="tallerMaximo">10</span> personas. El costo depende de la duración y la actividad.</p>
+          </div>
+        </div>
+
+        <div class="politicas vidrio">
+          <h3>Políticas de cancelación y cambios</h3>
+          <ul>
+            <li><strong>Cancelación:</strong> sin costo si se avisa con <span data-config="cancelacionHoras">24</span> hs de anticipación.</li>
+            <li><strong>Cambio de horario:</strong> sin costo si se avisa con <span data-config="cancelacionHoras">24</span> hs de anticipación.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORARIOS Y UBICACIÓN -->
+    <section id="horarios" class="seccion">
+      <div class="contenedor horarios__grilla">
+        <div class="vidrio bloque">
+          <h2>Cuándo podés usarlo</h2>
+          <table class="horarios">
+            <tbody id="horarios-tbody">
+              <tr><th scope="row">Lunes a viernes</th><td>8:00 a 21:00</td></tr>
+              <tr><th scope="row">Sábados</th><td>8:00 a 16:00</td></tr>
+              <tr><th scope="row">Domingos</th><td>Cerrado</td></tr>
+            </tbody>
+          </table>
+          <p class="nota">Consultá por horarios especiales.</p>
+        </div>
+
+        <div id="ubicacion" class="vidrio bloque">
+          <h2>Cordón Sur</h2>
+          <p><strong>Dirección:</strong> <span class="completar" data-config="direccion">[COMPLETAR: dirección exacta]</span></p>
+          <p>A una cuadra de Av. Rivera y tres cuadras de 18 de Julio.</p>
+          <p>Buena conexión de transporte y cerca de comercios y servicios.</p>
+          <div class="mapa mapa--vacio" aria-label="Mapa de ubicación">
+            <span class="completar">[COMPLETAR: mapa en js/config.js]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="seccion seccion--suave">
+      <div class="contenedor faq__contenedor">
+        <header class="seccion__encabezado">
+          <h2>Preguntas frecuentes</h2>
+        </header>
+
+        <div class="faq">
+          <details class="faq__item vidrio" open>
+            <summary>¿Qué incluye el precio por hora?<span class="faq__icono" aria-hidden="true"></span></summary>
+            <p>El consultorio equipado con aire acondicionado y WiFi, la sala de espera, la recepción y la cobertura SUAT.</p>
+          </details>
+          <details class="faq__item vidrio">
+            <summary>¿Puedo cancelar o cambiar mi horario?<span class="faq__icono" aria-hidden="true"></span></summary>
+            <p>Sí. Cancelar y cambiar el horario es sin costo si avisás con 24 hs de anticipación.</p>
+          </details>
+          <details class="faq__item vidrio">
+            <summary>¿Para qué profesiones sirven los consultorios?<span class="faq__icono" aria-hidden="true"></span></summary>
+            <p>Para abogados, escribanos, psicólogos, médicos, fisioterapeutas, masajistas, reiki y otras terapias alternativas.</p>
+          </details>
+          <details class="faq__item vidrio">
+            <summary>¿Puedo usar un consultorio para talleres o reuniones?<span class="faq__icono" aria-hidden="true"></span></summary>
+            <p>Sí, uno de los consultorios admite hasta <span data-config="tallerMaximo">10</span> personas. El costo se consulta según la actividad.</p>
+          </details>
+          <details class="faq__item vidrio">
+            <summary>¿Llevan la agenda de mis pacientes?<span class="faq__icono" aria-hidden="true"></span></summary>
+            <p>Sí, si lo querés llevamos tu agenda. Consultanos los detalles.</p>
+          </details>
+          <details class="faq__item vidrio">
+            <summary>¿Cómo reservo?<span class="faq__icono" aria-hidden="true"></span></summary>
+            <p>Escribinos por WhatsApp para consultar disponibilidad y reservar el horario que necesitás.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenedor contacto__grilla vidrio">
+        <div>
+          <h2>Reservá tu consultorio</h2>
+          <p>El primer contacto para consultar disponibilidad y reservar es por WhatsApp.</p>
+          <p class="contacto__linea"><strong>WhatsApp:</strong> <span class="completar" data-config="whatsappVisible">[COMPLETAR: número]</span></p>
+        </div>
+        <div class="contacto__accion">
+          <a href="#" class="boton boton--primario boton--grande js-whatsapp">
+            Escribir por WhatsApp <span class="flecha" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
   </main>
 
   <footer class="pie">
-    <div class="contenedor">
-      <p>Los datos (precio, WhatsApp, dirección, horarios) se editan en <code>js/config.js</code> y se aplican a todas las versiones.</p>
+    <div class="contenedor pie__interior">
+      <p>&copy; <span id="anio"></span> DeMaria Consultorios · Cordón, Montevideo</p>
+      <p class="pie__nota">Las características y precios pueden variar. Consultá la disponibilidad antes de reservar.</p>
     </div>
   </footer>
 
-  <script src="js/galeria.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
